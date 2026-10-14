@@ -1,0 +1,172 @@
+import type { MenuItem } from '../types';
+
+export const MENU_ITEMS: MenuItem[] = [
+  {
+    id: 'piz-1',
+    name: 'Classic Margherita Basil Pizza',
+    category: 'Pizza',
+    description: 'Crisp sourdough crust topped with San Marzano tomato sauce, fresh buffalo mozzarella, virgin olive oil, and fragrant sweet basil leaves.',
+    price: 349,
+    image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80',
+    isVeg: true,
+    rating: 4.8,
+    preparationTime: '20-25 mins',
+    tags: ['pizza', 'margherita', 'cheese', 'mozzarella', 'basil', 'veg', 'italian', 'crust']
+  },
+  {
+    id: 'piz-2',
+    name: 'Spicy Farmhouse Paneer Pizza',
+    category: 'Pizza',
+    description: 'Fresh hand-tossed base layered with spiced paneer cubes, crisp green bell peppers, sweet golden corn, red paprika, and gooey cheese.',
+    price: 399,
+    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80',
+    isVeg: true,
+    rating: 4.7,
+    preparationTime: '20-25 mins',
+    tags: ['pizza', 'paneer', 'farmhouse', 'corn', 'capsicum', 'veg', 'spicy', 'cheese']
+  },
+  {
+    id: 'piz-3',
+    name: 'Loaded Pepperoni & Smoked Chicken Pizza',
+    category: 'Pizza',
+    description: 'Signature crust loaded with savory pepperoni slices, spiced smoked chicken chunks, jalapenos, and double layers of melted mozzarella.',
+    price: 449,
+    image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80',
+    isVeg: false,
+    rating: 4.9,
+    preparationTime: '20-25 mins',
+    tags: ['pizza', 'pepperoni', 'chicken', 'nonveg', 'meat', 'smoked', 'sausage', 'spicy']
+  },
+  {
+    id: 'bur-1',
+    name: 'Classic Crispy Veggie Burger',
+    category: 'Burgers',
+    description: 'Crispy herb potato and green pea patty, crisp lettuce, farm-fresh vine tomatoes, and melted cheddar slice with garlic aioli.',
+    price: 189,
+    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80',
+    isVeg: true,
+    rating: 4.6,
+    preparationTime: '15-20 mins',
+    tags: ['burger', 'veg', 'crispy', 'veggie', 'patty', 'cheese', 'fastfood']
+  },
+  {
+    id: 'bur-2',
+    name: 'Smoked Barbecue Chicken Burger',
+    category: 'Burgers',
+    description: 'Tender grilled chicken breast glazed with hickory barbecue sauce, caramelized sweet onions, melted cheddar cheese, and pickles.',
+    price: 249,
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80',
+    isVeg: false,
+    rating: 4.9,
+    preparationTime: '15-20 mins',
+    tags: ['burger', 'chicken', 'bbq', 'barbecue', 'nonveg', 'grilled', 'meat']
+  },
+  {
+    id: 'ind-1',
+    name: 'Paneer Butter Masala Meal Box',
+    category: 'Indian',
+    description: 'Rich velvety tomato and cashew gravy with melt-in-mouth cottage cheese cubes, served with 2 flaky butter naans and jeera rice.',
+    price: 299,
+    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=80',
+    isVeg: true,
+    rating: 4.9,
+    preparationTime: '20-30 mins',
+    tags: ['indian', 'paneer', 'curry', 'naan', 'butter masala', 'veg', 'thali', 'rice']
+  },
+  {
+    id: 'ind-2',
+    name: 'Royal Hyderabadi Dum Chicken Biryani',
+    category: 'Indian',
+    description: 'Slow-cooked aromatic basmati rice layered with spiced marinated chicken, saffron milk, caramelized fried onions, served with cooling raita.',
+    price: 369,
+    image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80',
+    isVeg: false,
+    rating: 4.9,
+    preparationTime: '25-30 mins',
+    tags: ['indian', 'biryani', 'chicken', 'dum biryani', 'rice', 'nonveg', 'hyderabadi', 'spicy']
+  },
+  {
+    id: 'ind-3',
+    name: 'Mughlai Butter Chicken & Naan',
+    category: 'Indian',
+    description: 'Tender tandoor-roasted chicken simmered in a silky, mildly spiced buttery tomato gravy, served with fresh garlic butter naan.',
+    price: 389,
+    image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=80',
+    isVeg: false,
+    rating: 4.8,
+    preparationTime: '25-30 mins',
+    tags: ['indian', 'chicken', 'butter chicken', 'curry', 'naan', 'nonveg', 'mughlai']
+  },
+  {
+    id: 'snk-1',
+    name: 'Crisp Amritsari Paneer Pakora',
+    category: 'Snacks',
+    description: 'Golden gram-flour batter-fried cottage cheese cubes coated in carom seeds and chat masala, served with zesty mint chutney.',
+    price: 179,
+    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80',
+    isVeg: true,
+    rating: 4.5,
+    preparationTime: '10-15 mins',
+    tags: ['snacks', 'paneer', 'pakora', 'veg', 'fried', 'amritsari', 'starter']
+  },
+  {
+    id: 'snk-2',
+    name: 'Loaded Cheesy Peri-Peri Fries',
+    category: 'Snacks',
+    description: 'Hand-cut crispy golden fries tossed with zesty peri-peri seasoning and drenched in warm molten cheese sauce with jalapeños.',
+    price: 159,
+    image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80',
+    isVeg: true,
+    rating: 4.6,
+    preparationTime: '10-15 mins',
+    tags: ['snacks', 'fries', 'french fries', 'peri peri', 'cheese', 'veg', 'potatoes']
+  },
+  {
+    id: 'snk-3',
+    name: 'Crispy Fried Chicken Wings',
+    category: 'Snacks',
+    description: 'Golden crunchy chicken wings tossed with garlic pepper glaze, served with smoky chipotle dip.',
+    price: 229,
+    image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80',
+    isVeg: false,
+    rating: 4.7,
+    preparationTime: '15 mins',
+    tags: ['snacks', 'chicken', 'wings', 'nonveg', 'crispy', 'fried', 'starter']
+  },
+  {
+    id: 'bev-1',
+    name: 'Alphonso Mango Lassi',
+    category: 'Beverages',
+    description: 'Creamy chilled thick yogurt blended with authentic Ratnagiri Alphonso mango pulp, garnished with crushed green cardamom and pistachios.',
+    price: 129,
+    image: 'https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=600&q=80',
+    isVeg: true,
+    rating: 4.8,
+    preparationTime: '5 mins',
+    tags: ['beverages', 'drink', 'drinks', 'mango', 'lassi', 'sweet', 'chilled', 'veg']
+  },
+  {
+    id: 'bev-2',
+    name: 'Signature Cold Brew Coffee',
+    category: 'Beverages',
+    description: 'Steeped for 18 hours with Arabica single-origin beans, served chilled over crystalline ice with a silky splash of sweet cream.',
+    price: 149,
+    image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80',
+    isVeg: true,
+    rating: 4.7,
+    preparationTime: '5 mins',
+    tags: ['beverages', 'drink', 'drinks', 'coffee', 'cold brew', 'caffeine', 'chilled', 'veg']
+  },
+  {
+    id: 'bev-3',
+    name: 'Fresh Mint Lime Mojito',
+    category: 'Beverages',
+    description: 'Refreshing sparkling cooler muddled with fresh garden mint leaves, lime juice, simple cane syrup, and crushed ice.',
+    price: 119,
+    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80',
+    isVeg: true,
+    rating: 4.6,
+    preparationTime: '5 mins',
+    tags: ['beverages', 'drink', 'drinks', 'mojito', 'lime', 'mint', 'soda', 'veg', 'cold']
+  }
+];
